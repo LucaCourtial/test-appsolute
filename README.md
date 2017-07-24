@@ -15,7 +15,7 @@ Sujet :
 	- Ajouter possibilite de partage
 	- Possibilite de s'inscrire avec email / password, puis d'ajouter un article en favoris lister les articles en favoris (avec donc une base mysql)
 
-etapes :
+Etapes :
 
 	- Creation d'un fichier ".env" à la racine du projet et initilialiser les differentes variables suivant votre environnement (cf Annexes).
 	- Lancer la commande "php artisan migrate" à la racine du projet pour creer les tables de la base de donnees.
