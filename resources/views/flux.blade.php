@@ -30,7 +30,6 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="list-group-item"></li>
                                     <li class="list-group-item"><div><div style='z-index:1' class='fb-share-button' data-href='{{ $article->url }}' data-layout='button_count' data-size='small' data-mobile-iframe='true'><a class='fb-xfbml-parse-ignore' target='_blank' href='https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse'>Partager</a></div>&nbsp;
                                              <div class='g-plus' data-action='share' data-href='{{ $article->url }}'></div>&nbsp;
                                              <a href='https://twitter.com/share' class='twitter-share-button' data-text='Je pense que ça peut vous intéresser !' data-url='{{ $article->url }}' data-show-count='false'>Tweet</a></div></li>
