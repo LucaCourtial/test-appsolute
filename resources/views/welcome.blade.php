@@ -6,15 +6,12 @@
 <div class="flex-center position-ref">
             <div class="content">
                 <div class="title m-b-md">
-                    Luca
+                    Welcome
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a target="_blank" href="http://www.bbc.co.uk/sport">BBC Sport</a>
+                    <a target="_blank" href="http://www.bbc.com/news">BBC News</a>
                 </div>
             </div>
         </div>

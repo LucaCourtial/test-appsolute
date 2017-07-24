@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
@@ -24,9 +23,9 @@ class BookmarksController extends Controller
     }
 
     /**
-     * Show the application dashboard.
+     * Show user's bookmarks.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function index()
     {
@@ -57,6 +56,7 @@ class BookmarksController extends Controller
         
         $bookmarkTest = DB::table('bookmarks')->get()->where('user_id', Auth::user()->id)->where('title', Input::get("title"));
         
+        //si echec de validator OU utilisateur non connecté OU si le favori existe déjà
         if ($validator->fails() || !Auth::check() || !$bookmarkTest->isEmpty()) {
             return Redirect::to('/flux')
                 ->withErrors($validator)
