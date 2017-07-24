@@ -18,12 +18,13 @@ etapes :
 	- Lancer la commande "php artisan migrate" à la racine du projet pour creer les tables de la base de donnees.
 
 Annexes :
+
 	APP_NAME=
 	APP_ENV=local
 	APP_KEY=
 	APP_DEBUG=true
 	APP_LOG_LEVEL=debug
-	APP_URL=
+	APP_URL=http://localhost
 
 	DB_CONNECTION=mysql
 	DB_HOST=127.0.0.1
