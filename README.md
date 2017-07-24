@@ -7,8 +7,8 @@ Context :
 	Test realise dans le cadre d'une candidature pour être alternant developpeur Php à Appsolute.
 
 Sujet :
-	Votre defi si vous l'acceptez est de creer un petit site responsive Laravel ou Symfony (ou PHP/ Node si vous ne pouvez ni LV ni SF) qui aura les proprietes suivantes:
 
+	Votre defi si vous l'acceptez est de creer un petit site responsive Laravel ou Symfony (ou PHP/ Node si vous ne pouvez ni LV ni SF) qui aura les proprietes suivantes:
 	- recuperer un flux JSON d'actualites de la BBC Sport: https://newsapi.org
 	- Afficher la liste qui devra contenir les articles avec date / heure / image / titre / abstract
 	- Au clic ouvrir la vue de detail de l'article en natif (pas dans le navigateur)
