@@ -2,7 +2,9 @@
 
 Courtial Luca
 
-Context : Test realise dans le cadre d'une candidature pour être alternant developpeur Php à Appsolute.
+Context : 
+
+	Test realise dans le cadre d'une candidature pour être alternant developpeur Php à Appsolute.
 
 Sujet :
 	Votre defi si vous l'acceptez est de creer un petit site responsive Laravel ou Symfony (ou PHP/ Node si vous ne pouvez ni LV ni SF) qui aura les proprietes suivantes:
@@ -14,6 +16,7 @@ Sujet :
 	- Possibilite de s'inscrire avec email / password, puis d'ajouter un article en favoris lister les articles en favoris (avec donc une base mysql)
 
 etapes :
+
 	- Creation d'un fichier ".env" à la racine du projet et initilialiser les differentes variables suivant votre environnement (cf Annexes).
 	- Lancer la commande "php artisan migrate" à la racine du projet pour creer les tables de la base de donnees.
 
