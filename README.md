@@ -23,7 +23,7 @@ Annexes :
 	APP_KEY=
 	APP_DEBUG=true
 	APP_LOG_LEVEL=debug
-	APP_URL=http://localhost
+	APP_URL=
 
 	DB_CONNECTION=mysql
 	DB_HOST=127.0.0.1
