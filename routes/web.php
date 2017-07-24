@@ -15,13 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-/*Route::get('/flux', function () {
-    $json = file_get_contents("https://newsapi.org/v1/articles?source=bbc-sport&sortBy=top&apiKey=ba5ec29198814d8f8d0cb705431b6978");
-    $obj = json_decode($json);
-    
-    return view('flux')->with("articles", $obj->articles);
-});*/
-
 Route::get('/flux', 'FluxController@index');
 
 Route::post('/bookmarks', 'BookmarksController@store');
