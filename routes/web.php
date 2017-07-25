@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 Route::get('/flux', 'FluxController@index');
 
+Route::get('/detail/{title}', 'DetailController@index');
+
 Route::post('/bookmarks', 'BookmarksController@store');
 
 Auth::routes();

@@ -15,7 +15,7 @@
                 <div>
                 <ul class="list-group">
                    @foreach($bookmarks as  $bookmark)
-                        <li class="list-group-item list-group-item-info"><b> <a target="_BLANK" href="{{ $bookmark->url }}"> {{ $bookmark->title }}</a></b>
+                        <li class="list-group-item list-group-item-info"><b><a href="{{ url('detail') }}/{{($bookmark->title)}}"> {{ $bookmark->title }}</a></b>
                         <ul class="list-group">
                             <li class="list-group-item"><i>{{ date("d/m/Y - h:i:s", strtotime($bookmark->publishedAt)) }}</i></li>
                             <li class="list-group-item"><div class="row">

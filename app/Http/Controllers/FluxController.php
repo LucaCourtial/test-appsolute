@@ -16,6 +16,13 @@ class FluxController extends Controller
         /*$this->middleware('auth');*/
     }
 
+    
+    public static function getFlux(){
+        $json = file_get_contents("https://newsapi.org/v1/articles?source=bbc-sport&sortBy=top&apiKey=ba5ec29198814d8f8d0cb705431b6978");
+        $obj = json_decode($json);
+        return $obj;
+    }
+    
     /**
      * Show the flux from bbc news.
      *
@@ -25,7 +32,7 @@ class FluxController extends Controller
     {
         //recuperation du flux JSON de bbc sport
         $json = file_get_contents("https://newsapi.org/v1/articles?source=bbc-sport&sortBy=top&apiKey=ba5ec29198814d8f8d0cb705431b6978");
-        $obj = json_decode($json);
+        $obj = FluxController::getFlux();
         
         //servira à vérifier dans la vue via Blade si l'article est dans les favoris
         $titlesBookmarks = DB::table('bookmarks')->get(['title']);

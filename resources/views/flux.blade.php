@@ -17,7 +17,7 @@
                 <ul class="list-group">
                     @foreach($articles as  $article)
                         @if (Auth::guest() || in_array($article->title, $bookmarks))
-                        <li class="list-group-item list-group-item-info"><b><a target="_BLANK" href="{{ $article->url }}"> {{ $article->title }}</a></b>
+                        <li class="list-group-item list-group-item-info"><b><a href="{{ url('detail') }}/{{($article->title)}}"> {{ $article->title }}</a></b>
                                 <ul class="list-group">
                                     <li class="list-group-item"><i>{{ date("d/m/Y - h:i:s", strtotime($article->publishedAt)) }}</i></li>
                                     <li class="list-group-item">
@@ -35,7 +35,7 @@
                                              <a href='https://twitter.com/share' class='twitter-share-button' data-text='Je pense que ça peut vous intéresser !' data-url='{{ $article->url }}' data-show-count='false'>Tweet</a></div></li>
                                 </ul>
                         @else
-                            <li class="list-group-item list-group-item-info titleFlux"><b><a target="_BLANK" href="{{ $article->url }}"> {{ $article->title }}</a></b>
+                            <li class="list-group-item list-group-item-info titleFlux"><b><a href="{{ url('detail') }}/{{($article->title)}}"> {{ $article->title }}</a></b>
                                 <ul class="list-group">
                                 <li class="list-group-item"><i>{{ date("d/m/Y - h:i:s", strtotime($article->publishedAt)) }}</i></li>
                                 <li class="list-group-item">
@@ -66,7 +66,6 @@
                             {{ Form::submit('Add to bookmarks', array('class' => 'btn btn-primary')) }}
                             {{ Form::close() }}
                         @endif
-                            
                         </li>
                     @endforeach                   
                 </ul>
@@ -77,7 +76,7 @@
         
 
         
-
+        
         @endsection
         
         <!-- scripts pour les boutons de partage + css modifié pour aligner le bouton facebook-->
